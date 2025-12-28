@@ -7240,7 +7240,8 @@ local Library do
                 Logo = Data.Logo or Data.logo or "135215559087473",
                 FadeSpeed = Data.FadeSpeed or Data.fadespeed or 0.2,
                 Version = Data.Version or Data.version or "v1.0.0 alpha",
-                Size = not IsMobile and UDim2New(0, 659, 0, 511) or UDim2New(0, 511, 0, 459),
+                Size = not IsMobile and UDim2New(0, 659, 0, 511) or UDim2New(0, 357, 0, 321),
+
 
                 Pages = { },
                 SubPages = { },
@@ -7399,7 +7400,7 @@ local Library do
                     ZIndex = 2,
                     BorderSizePixel = 0,
                     BackgroundColor3 = FromRGB(255, 255, 255)
-                })  Items["Logo"]:AddToTheme({ImageColor3 = "Accent"})
+                })  Items["Logo"]:AddToSize = not IsMobile and UDim2New(0, 659, 0, 511) or UDim2New(0, 357, 0, 321),({ImageColor3 = "Accent"})
 
                 Items["Title"] = Instances:Create("TextLabel", {
                     Parent = Items["Topbar"].Instance,
@@ -10115,7 +10116,7 @@ end
 -- Example
 do
     local Window = Library:Window({
-        Name = "kiwisense",
+        Name = "skiihub",
         Version = "v2.1",
         Logo = "135215559087473",
         FadeSpeed = 0.25,
